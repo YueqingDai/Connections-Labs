@@ -1,0 +1,5 @@
+1. A digital pet like tamagotchi but in a web form. The user need to take care of the pet and the pet would grow up in different forms based on what the users did in the brower
+
+2. Dive In Time 2.0. Dive in Time is an interactive project I made in Summer for creative coding that shows the relationships between people. For this class I want to generat the river with real data from users' social media accounte with allowrence. Slide to this project: https://docs.google.com/presentation/d/1ku07RkpyY1uumGAMYMw4TPNIH-38sfG0_nHex65yr3s/edit?usp=sharing
+
+3. A homophone recorder and generator
