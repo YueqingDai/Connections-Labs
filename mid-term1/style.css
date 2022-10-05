@@ -1,0 +1,195 @@
+h1{
+    color: white;
+    text-shadow: 0.3em 0.3em 0.2em rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+h2{
+    color: white;
+    text-shadow: 0.3em 0.3em 0.2em rgb(143, 118, 72);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+h3{
+    color: white;
+    text-shadow: 0.3em 0.3em 0.2em rgb(218, 196, 157);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+p{
+    color: rgb(235, 235, 235);
+    font-size:20px;
+}
+
+body {
+    
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.large{
+    background-image: url("load.png") ;
+    background-position: center;
+    background-size: 500px;
+}
+
+.loaf {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+
+    border-radius: 25px;
+
+    background-color: rgb(148, 132, 108);
+}
+
+.timer{
+    background-color:rgb(179, 153, 114);
+    min-width: 350px;
+    flex: 1 1 auto;
+    background-image: url("egg3.png") ;
+    background-position: left+10px bottom+10px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+
+.free{
+    background-color:rgb(151, 126, 88);
+    min-width: 350px;
+    flex: 1 1 auto;
+    background-image: url("egg.png") ;
+    background-position: right+10px bottom;
+    background-size: 150px;
+    background-repeat: no-repeat;
+}
+
+.money{
+    min-width: 350px;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.top-right {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.top {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.middle{
+    min-width: 350px;
+    background-color:rgb(196, 153, 90);
+    background-image: url("egg2.png") ;
+    background-position: left+10px bottom+10px;
+    background-size: 150px;
+    background-repeat: no-repeat;
+}
+
+.down{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+
+.puppy{
+    width: 40%;
+    min-width: 350px;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color:rgb(151, 126, 88);
+
+    vertical-align: middle;
+}
+
+.puppy img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.meme{
+    width: 40%;
+    min-width: 350px;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.meme img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.button {
+    transition-duration: 0.2s;
+    background-color: #966333; 
+    border:0px; 
+    color: #ffcd9f;
+    border-radius: 3px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 8px 20px;
+    font-size: 16px;
+}
+ 
+.button:hover {
+    background-color: #f1c183; 
+    border: 2px solid #966333; 
+    color: #966333;
+}
+
+.downbtn {
+    background-color: #966333;
+    border-radius: 3px;
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+input{
+    border: 2px solid #966333;
+    border-radius: 4px;
+    padding: 5px 5px;
+}   
+
+.showMoney{
+    margin-top: 10px;
+}

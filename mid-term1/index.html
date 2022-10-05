@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="style.css" rel="stylesheet"/>
+        <title>Loaf On Job - Just mess around
+        </title>
+        
+</head>
+
+<body>
+    <h1> Loaf On Job - Just mess around and enjoy =)</h1>
+
+    <section class="top">
+        <section id="section2Money" class="loaf large money">
+            <h2 class="s-title">---$$$---</h2>
+            <div class="main">
+                <div id = "PaydayCD">
+                    <h3>Payday Countdown</h3>
+                    <p id="2Payday"> Please set your payday</p>
+                    <select id="SetPayDay" class="s-p downbtn">
+                        <option class="dropdown">1st</option>
+                        <option class="dropdown">15th</option>
+                        <option class="dropdown">End of the month</option>
+                    </select>
+                    <button id="pay-button" class="button s-p" onclick = "setPD()"> Set Payday</button>
+                </div>
+    
+                <div id ="SalaryC">
+                    <h3>How much you earn today</h3>
+                    <p id="incomeNum"> Please set your worktime and salary:</p>
+                    <div id="s-i">
+                        <form id="scrollStart">
+                            Start Work At:
+                            <select id="SetStartHour" class="downbtn">
+                                <option class="dropdown">7</option>
+                                <option class="dropdown">8</option>
+                                <option class="dropdown">9</option>
+                                <option class="dropdown">10</option>
+                                <option class="dropdown">11</option>
+                            </select>
+                            :
+                            <select id="SetStartMinute"  class="downbtn">
+                                <option class="dropdown">00</option>
+                                <option class="dropdown">30</option>
+                            </select>
+                            am
+                        </form>
+        
+                        <br>
+                        <form id="scrollWork">
+                            Working hours:
+                            <select id="SetWorkTime"  class="downbtn">
+                                <option class="dropdown">4</option>
+                                <option class="dropdown">5</option>
+                                <option class="dropdown">6</option>
+                                <option class="dropdown">7</option>
+                                <option class="dropdown">8</option>
+                                <option class="dropdown">9</option>
+                                <option class="dropdown">10</option>
+                                <option class="dropdown">11</option>
+                                <option class="dropdown">12</option>
+                            </select>
+                            hours
+                        </form>
+                        <p id="incomeNum"> Please enter your monthly and salary (number only):</p>
+                        <input id="salary">
+                        <br>
+                        <button id="num-button" class="button showMoney" onclick = "setWork()">Show the Money!</button>
+                    </div>
+                </div>
+            </div>  
+        </section>
+    
+        <section class="top-right">
+            <section id="sectionTime" class="loaf timer">
+                <h2 class="s-title">---Timer---</h2>
+                <div class="main">
+                    <p id="timeNow"> Meme Title </p>
+                </div>  
+            </section>
+            
+            <section id="section2Freedom" class="loaf free">
+                <h2 class="s-title">---Days to Freedom---</h2>
+                
+                <div class="main">
+                    <div id = "WeekendCD">
+                        <p id="2Weekend"> <span id="Num2Weekend"></span> Days to Weekend =)</p>
+                    </div>
+        
+                    <div id = "HolidatCD">
+                        <p id="2Holiady"> <span id="Num2Holiday"></span> to <span id="HolidayName">. </p>
+                    </div>
+        
+                    <div id = "activity">
+                        <p id="acts"> Try this: <span id="actName"> </p>
+                    </div>
+                    
+                </div>  
+            </section>
+        </section>
+    </section>
+    
+    <section id="sectionJoke" class="loaf middle">
+        <h2  class="s-title">---Life is a Joke, Take it Easy---</h2>
+        <div class="main">
+            <p id="joke" class="p-joke"> Joke here. </p>
+        <div id = "refresh" >
+            <button id="button-joke" class="button" onclick = "NewJoke()">New Joke</button>
+        </div>
+        </div>  
+    </section>
+
+    <section class="down">
+        <section id="sectionPuppy" class="loaf large puppy" >
+            <h2 class="s-title"> ---Puppy on the loaf---</h2>
+            <div class="main">
+                <img class="puppy-image" id="p-img">
+            </div>  
+        </section>
+    
+        <section id="sectionMeme" class="loaf large meme">
+            <h2 class="s-title">---Meme on the loaf---</h2>
+            <div class="main">
+                <p id="memeTitle"> Meme Title </p>
+                <img id="m-img">
+            </div>  
+        </section>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
