@@ -250,7 +250,7 @@ function countSalary(Money, Shour, Smin, WTime){
 function ToWeekend(today){
   let day2weekend = 7 - today;
   if(day2weekend >=3){
-    document.getElementById("Num2Weekend").innerHTML = day2weekend;
+    document.getElementById("Num2Weekend").innerHTML = day2weekend-1;
   }else{
     document.getElementById("2Weekend").innerHTML = "Today is Weekend!!";
   }
