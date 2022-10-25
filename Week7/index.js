@@ -15,9 +15,13 @@ app.use("/", express.static("public"));
 app.post("/message", (req,res) => {
   console.log(req.body);
   let NowDate = Date();
+  let t = new Date();
+  let Nowmonth = t.getMonth();
   let obj = {
     date: NowDate,
-    msg: req.body.msg
+    month: Nowmonth,
+    msg: req.body.msg,
+    userid: req.body.Userid
   }
 
   db.insert(obj,(err,nweDocs)=>{
@@ -47,7 +51,7 @@ app.get('/getmessage',(req,res)=>{
     if(err){
       res,json({status:"failed"});
     }else{
-      let objq = {headerone:docs};
+      let objq = {inspiration:docs};
       res.json(objq);
     }
     //console.log(docs);

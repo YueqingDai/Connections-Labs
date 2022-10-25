@@ -2,7 +2,7 @@ window.addEventListener("load",() => {
   let msgButton = document.getElementById("msg-submit");
   msgButton.addEventListener("click", () => {
     let msgText = document.getElementById("msg-input").value;
-    
+    let idtext = document.getElementById("id-input").value;
     //console.log(msgText);
     
     
@@ -10,6 +10,7 @@ window.addEventListener("load",() => {
     
     //send the msgText to the server
     let msgObj = {
+      "Userid" : idtext,
       "msg" : msgText
     }
     let msgObjectJSON = JSON.stringify(msgObj)
@@ -26,14 +27,14 @@ window.addEventListener("load",() => {
     
   })
 
-  document.getElementById('button1').addEventListener('click',()=>{
+  document.getElementById('ins_show').addEventListener('click',()=>{
     fetch('/getmessage')
     .then(resp => resp.json())
     .then(daty => {
-      console.log(daty.headerone);
+      console.log(daty.inspiration);
       document.getElementById('msginfo').innerHTML = '';
-      for(let i=0;i<daty.headerone.length; i++){
-        let string = daty.headerone[i].date + daty.headerone[i].msg;
+      for(let i=0;i<daty.inspiration.length; i++){
+        let string = daty.inspiration[i].date + daty.inspiration[i].msg;
         let elt = document.createElement('p');
         elt.innerHTML=string;
         document.getElementById('msginfo').appendChild(elt);
