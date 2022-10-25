@@ -6,7 +6,7 @@ let datastore = require('nedb');
 let db = new datastore('data.db');
 db.loadDatabase();
 
-let messageTraker = [];
+//let messageTraker = [];
 
 app.use("/", express.static("public"));
 
