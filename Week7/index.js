@@ -6,8 +6,6 @@ let datastore = require('nedb');
 let db = new datastore('data.db');
 db.loadDatabase();
 
-//let messageTraker = [];
-
 app.use("/", express.static("public"));
 
 
@@ -33,10 +31,6 @@ app.post("/message", (req,res) => {
     //console.log('new info insert');
     
   })
-
-
-  //messageTraker.push(obj);
-  //console.log(messageTraker);
   
 })
 
